@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | JAC Media — Apply for a Pilot Slot or Growth Package</title>
+  <meta name="description" content="Contact JAC Media or apply online. Questions about our growth tiers or pay-per-lead performance pilot for roofing, solar, and remodeling contractors? Reach out today.">
+  <meta name="theme-color" content="#0e0e0e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="JAC Media — Home">
+          <img src="images/logo-header.png" alt="JAC Media" width="700" height="258">
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Contact info + application form ===== -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left column: direct contact info -->
+          <div class="contact-info">
+            <span class="eyebrow">Contact</span>
+            <h1>Let&rsquo;s Scale Your <span class="text-silver">Business</span></h1>
+            <p class="lead">
+              Have questions about our growth tiers or our performance pilot program? Drop us a line or fill out the application form.
+            </p>
+
+            <ul class="contact-details">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label">Call us</span>
+                  <a class="contact-value" href="tel:+15862216725">(586)-221-6725</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a class="contact-value" href="mailto:jcuppari@jacmediaagency.com">jcuppari@jacmediaagency.com</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right column: contractor qualification form (Web3Forms) -->
+          <div class="card static form-card">
+            <h2 class="form-title">Contractor Application</h2>
+            <p class="form-intro">Tell us about your business and we&rsquo;ll be in touch.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms configuration -->
+              <input type="hidden" name="access_key" value="78a5eb38-58a9-4048-baf4-e74b96edb81e">
+              <input type="hidden" name="subject" value="New JAC Media Contractor Application">
+              <!-- Honeypot: hidden from people, bots fill it in and get discarded -->
+              <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" id="full-name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                  <label for="business-name">Business Name</label>
+                  <input type="text" id="business-name" name="business_name" autocomplete="organization" required>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </div>
+
+                <div class="field">
+                  <label for="niche">Primary Service Niche</label>
+                  <select id="niche" name="primary_service_niche" required>
+                    <option value="" disabled selected>Select your niche</option>
+                    <option>Roofing</option>
+                    <option>Solar</option>
+                    <option>Remodeling</option>
+                    <option>Multi-Service Contractor</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="revenue">Current Monthly Revenue</label>
+                  <select id="revenue" name="current_monthly_revenue" required>
+                    <option value="" disabled selected>Select your revenue</option>
+                    <option>Under $25k</option>
+                    <option>$25k - $50k</option>
+                    <option>$50k - $100k</option>
+                    <option>$100k+</option>
+                  </select>
+                </div>
+              </div>
+
+              <label class="pilot-check" for="pilot-slot">
+                <input type="checkbox" id="pilot-slot" name="pilot_slot_application" value="Yes">
+                <span>Apply for one of our 3 Limited Pilot Slots (<span class="nowrap">Pay-Per-Lead</span>, No Management Fees).</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary btn-lg form-submit">Submit Application &amp; Secure Territory</button>
+
+              <p class="form-error" role="alert" hidden>
+                Something went wrong sending your application. Please try again, or call
+                <a href="tel:+15862216725">(586)-221-6725</a> or email
+                <a href="mailto:jcuppari@jacmediaagency.com">jcuppari@jacmediaagency.com</a>.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>How does the Pay-Per-Lead Pilot program work?</summary>
+            <p>We handle 100% of your campaign builds, ad creative creation, and targeting. You only pay a flat $75 per qualified lead we generate during the 30-day window. You maintain total control over your ad spend.</p>
+          </details>
+
+          <details>
+            <summary>What counts as a &ldquo;qualified lead&rdquo;?</summary>
+            <p>We build strict custom lead-filtering forms. A qualified lead means a homeowner in your service area who has explicitly requested an estimate for your service and provided verified contact info.</p>
+          </details>
+
+          <details>
+            <summary>Do I really get to keep the assets if we part ways?</summary>
+            <p>Yes. If you decide not to transition to a growth tier after 30 days, all the ad accounts, custom forms, and ad graphics remain yours to use forever.</p>
+          </details>
+
+          <details>
+            <summary>Why do you require a testimonial?</summary>
+            <p>As a performance-driven agency, your localized data and feedback help us refine regional ad strategies. We trade our premium management services for your honest video or written review.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo logo-footer" href="index.html" aria-label="JAC Media — Home">
+            <img src="images/logo-full.png" alt="JAC Media — Digital Advertising Agency" width="900" height="384">
+          </a>
+          <p class="footer-blurb">
+            Social media lead generation for roofing, solar, and remodeling contractors.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Quick Links</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-title">Get In Touch</h2>
+          <ul class="footer-contact">
+            <li><strong>Call us:</strong> <a href="tel:+15862216725">(586)-221-6725</a></li>
+            <li><strong>Email:</strong> <a href="mailto:jcuppari@jacmediaagency.com">jcuppari@jacmediaagency.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 JAC Media. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sends the application to Web3Forms in the background, then shows the thank-you page.
+       Without JavaScript the form still posts normally to Web3Forms. -->
+  <script>
+    (function () {
+      var form = document.querySelector('.form-card form');
+      if (!form || !window.fetch) return;
+
+      var button = form.querySelector('.form-submit');
+      var error = form.querySelector('.form-error');
+      var label = button.textContent;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        error.hidden = true;
+        button.disabled = true;
+        button.textContent = 'Sending…';
+
+        fetch(form.action, {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form)
+        })
+          .then(function (response) {
+            return response.json().then(function (data) {
+              if (!response.ok || !data.success) throw new Error(data.message || 'Request failed');
+            });
+          })
+          .then(function () {
+            window.location.href = 'thank-you.html';
+          })
+          .catch(function () {
+            error.hidden = false;
+            button.disabled = false;
+            button.textContent = label;
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
