@@ -523,8 +523,9 @@ h3 { font-size: var(--fs-h3); letter-spacing: -0.01em; }
 }
 
 /* ---------- 7d. Pricing ---------- */
+/* Packages sit below the pilot offer; extra top room for the featured card's badge */
 .tiers {
-  padding-top: clamp(2.5rem, 5vw, 3.5rem);
+  padding-top: clamp(3rem, 6vw, 4.5rem);
 }
 
 .pricing-grid {
@@ -673,8 +674,10 @@ h3 { font-size: var(--fs-h3); letter-spacing: -0.01em; }
 }
 
 /* ---------- 7e. Pilot program ---------- */
+/* Pilot offer leads the page, directly under the header */
 .pilot-section {
-  padding-top: 0;
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: 0;
 }
 
 .pilot {
